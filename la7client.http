@@ -1,0 +1,33 @@
+POST http://localhost:3000/insert
+Content-Type: application/json
+
+{
+    "username":"tan",
+    "password": "123456",
+    "age": 20
+}
+
+###
+GET http://localhost:3000/find
+Content-Type: application/json
+    
+{
+    "username": "tan"
+}
+
+###
+PATCH http://localhost:3000/comment
+Content-Type: application/json
+
+{
+    "username":"tan",
+    "age": 23
+}
+
+###
+DELETE http://localhost:3000/deleted
+Content-Type: application/json
+
+{
+    "username": "tan"
+}
